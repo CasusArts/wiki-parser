@@ -1,29 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wikipedia Parser</title>
-</head>
-<body>
-    <div class="main">
-		<form name="wikiform" id="lookup">
-			<div>
-				<label for="lookup">What we are looking for?</label>
-				<input name="lookup" class="query" type="text">
-				<input name="search" class="search" type="button" value="Go!">
-			</div>
-		</form>
-		<div class="parsed-content">
-			<h4>Search results:</h4>
-			<div class="results">
-				<p></p>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+		<div class="row">
+			<h1>Wikipedia Parser</h1>
+		</div>
+		<div class="row">
+			<form name="wikiform" id="lookup">
+				<div>
+					<label for="wikiform">What are we looking for?</label><br>
+					<input name="query" id="query" type="text">
+					<input name="go" id="go" type="button" value="Go!">
+				</div>
+			</form>
+		</div>
+		<div class="row">
+			<div class="parsed-content">
+				<h4>Search results:</h4>
+				<div class="results">
+					<p></p>
+				</div>
 			</div>
 		</div>
 	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="../node_modules/axios/dist/axios.min.js"></script>
+	<script src="../node_modules/popper.js/dist/popper.min.js"></script>
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="scripts/app.js"></script>
-</body>
+  </body>
 </html>
